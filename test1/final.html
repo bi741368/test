@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #img1 {
+        width: 300px;
+    }
+
+    #img2 {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    #img3 {
+        width: 20px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <img src="img/img3.webp" alt="" id="img1">
+        <img src="img/img3.webp" alt="" id="img2">
+        <img src="img/img4.webp" alt="" id="img3">
+    </div>
+</body>
+<script>
+    var img1 = document.getElementById('img1');
+    var img2 = document.getElementById('img2');
+    var img3 = document.getElementById('img3');
+
+    img2.addEventListener("click", () => {
+
+        img1.src = "img/img3.webp";
+
+    });
+
+    img3.addEventListener("click", () => {
+
+        img1.src = "img/img4.webp";
+
+    });
+</script>
+
+</html>

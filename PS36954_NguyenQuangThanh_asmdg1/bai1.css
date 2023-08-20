@@ -1,0 +1,1354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1;
+  cursor: pointer;
+}
+.kq {
+  width: 60%;
+  height: auto;
+  display: flex;
+}
+/* sản phẩm */
+.kq .sp {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid black;
+}
+.sp h2{
+  font-family: "Merriweather", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Rowdies", cursive;
+  /* color: #045f93; */
+}
+.sp p{
+  font-family: "Merriweather", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Rowdies", cursive;
+  font-size: 20px;
+  /* color: #0082cd; */
+}
+.sp h3{
+  /* color: red; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sp img {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.slide-show {
+  width: 40%;
+  position: relative;
+  height: auto;
+}
+.slide-show .list-images {
+  display: flex;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.list-images .btn1 {
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.list-images .btn1 button {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 25px;
+  border-top-right-radius: 10px;
+  color: white;
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+}
+.list-images .btn1 button:active {
+  background-color: rgb(72, 157, 222);
+  color: white;
+}
+.list-images .btn2 button:active {
+  background-color: rgb(72, 157, 222);
+  color: white;
+}
+.list-images .btn2 button {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 25px;
+  border-top-left-radius: 10px;
+  color: white;
+  cursor: pointer;
+  border-bottom-left-radius: 10px;
+}
+.list-images .btn2 {
+  position: absolute;
+  right: 0;
+}
+.list-images img {
+  width: 100%;
+}
+.slide-show .btns .btn:hover {
+  color: white;
+}
+.slide-show .btn-left {
+  left: 0;
+}
+.slide-show .btn-right {
+  right: 0;
+}
+
+header {
+  text-align: right;
+  padding-left: 10px;
+  margin: 10px;
+  width: 99%;
+  height: auto;
+}
+
+header > span {
+  margin-right: 20px;
+}
+
+header > span > a {
+  font-family: "Merriweather", serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Rowdies", cursive;
+  color: black;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /* sticky nav */
+  z-index: 1;
+}
+
+.mainnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  /* position: sticky;
+    position: -webkit-sticky;
+    top: 0; */
+}
+
+.mainnav > .nav1 > a > img {
+  margin-left: 50px;
+  width: 100px;
+}
+
+.menu {
+  display: flex;
+  padding: 20px;
+}
+
+.menu > .box1 > .content {
+  width: 1520px;
+  background-color: white;
+  height: 380px;
+  top: 62px;
+  position: absolute;
+  left: -530px;
+  display: none;
+  transition: all ease-in-out 0.5s;
+}
+.menu > .box1 > .content > .inside {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+.menu > .box1 > .content > .inside > .column1 {
+  display: flex;
+  flex-direction: column;
+}
+.menu > .box1 > .content > .inside > .column1 > span {
+  padding: 10px;
+}
+.menu > .box1 > .content > .inside > .column1 > span > a {
+  color: rgb(30, 30, 30);
+}
+.menu > .box1 > .content > .inside > .column1 > span > a:hover {
+  color: #0082cd;
+  border-bottom: 2px solid #034c77;
+}
+.spec > a {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.spec > a:hover {
+  color: #0082cd;
+}
+
+.menu > .box1:hover .content {
+  display: block;
+  transition: all ease-in-out 1s;
+}
+
+.menu > .box1 {
+  padding: 20px;
+  position: relative;
+}
+
+.menu > .box2 {
+  padding: 20px;
+  position: relative;
+}
+
+.menu > .box3 {
+  padding: 20px;
+  position: relative;
+}
+
+.menu > .box4 {
+  padding: 20px;
+  position: relative;
+}
+
+.box1 > span > a {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.box2 > span > a {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.box3 > span > a {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.box4 > span > a {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.box1 > span > a::after {
+  content: "";
+  height: 5px;
+  width: 0px;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all ease-in-out 0.2s;
+}
+
+.box1 > span > a:hover::after {
+  width: 50%;
+  transform: translateX(50%);
+}
+
+.box2 > span > a::after {
+  content: "";
+  height: 5px;
+  width: 0px;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all ease-in-out 0.2s;
+}
+
+.box2 > span > a:hover::after {
+  width: 50%;
+  transform: translateX(50%);
+}
+
+.box3 > span > a::after {
+  content: "";
+  height: 5px;
+  width: 0px;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all ease-in-out 0.2s;
+}
+
+.box3 > span > a:hover::after {
+  width: 50%;
+  transform: translateX(50%);
+}
+
+.box4 > span > a::after {
+  content: "";
+  height: 5px;
+  width: 0px;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all ease-in-out 0.2s;
+}
+
+.box4 > span > a:hover::after {
+  width: 50%;
+  transform: translateX(50%);
+  transition: all ease-in-out 0.2s;
+}
+
+.icon {
+  padding: 10px;
+}
+
+.icon > span {
+  margin: 15px;
+  font-size: 20px;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+article > .content1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-top:  1px solid black;
+}
+
+.content1 > .img1 {
+  width: 50%;
+  height: 640px;
+  position: relative;
+}
+
+.content1 > .img1 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content1 > .img2 {
+  width: 50%;
+  height: 640px;
+  position: relative;
+}
+
+.content1 > .img2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  top: 75%;
+  left: 22%;
+  text-align: center;
+  display: inline-block;
+}
+
+.text > a {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.text > a > span {
+  font-family: "Merriweather", serif;
+  color: white;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px black;
+}
+
+.img1 > .text > a > .btn {
+  background-color: #111111;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.img1 > .text > a > .btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.img2 > .text > a > .btn {
+  background-color: #0082cd;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.img2 > .text > a > .btn:hover {
+  background-color: white;
+  color: #0082cd;
+  border: 1px solid #0082cd;
+}
+
+.listitem {
+  width: 98%;
+  height: auto;
+  margin: auto;
+}
+
+/* list1 */
+.listitem > .list1 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* item */
+.list1 > .item {
+  width: 25%;
+  height: 450.77px;
+  position: relative;
+}
+
+.list1 > .item > a > .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s;
+}
+
+.list1 > .item > a > .img > .change {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.item:hover a > .img > .change {
+  opacity: 0;
+}
+
+.item > a > .info > span {
+  color: black;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 9px;
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 3px;
+}
+
+.item > a > .info > .price {
+  font-weight: lighter;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* list2 */
+.listitem > .list2 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.list2 > .item {
+  width: 25%;
+  height: 447.77px;
+  position: relative;
+}
+
+.list2 > .item > a > .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
+}
+
+.list2 > .item > a > .img > .change {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.item:hover a > .img > .change {
+  opacity: 0;
+}
+
+.item > a > .info {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item > a > .info > .price {
+  font-weight: lighter;
+}
+
+/* LIST3 */
+.listitem > .list3 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.list3 > .item {
+  width: 25%;
+  height: 447.77px;
+  position: relative;
+}
+
+.list3 > .item > a > .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
+}
+
+.list3 > .item > a > .img > .change {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.item:hover a > .img > .change {
+  opacity: 0;
+}
+
+.item > a > .info {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item > a > .info > .price {
+  font-weight: lighter;
+}
+
+/* LIST4 */
+.listitem > .list4 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.list4 > .item {
+  width: 25%;
+  height: 447.77px;
+  position: relative;
+}
+
+.list4 > .item > a > .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
+}
+
+.list4 > .item > a > .img > .change {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.item:hover a > .img > .change {
+  opacity: 0;
+}
+
+.item > a > .info {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item > a > .info > .price {
+  font-weight: lighter;
+}
+
+/* LIST 5 */
+.listitem > .list5 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.list5 > .item {
+  width: 25%;
+  height: 447.77px;
+  position: relative;
+}
+
+.list5 > .item > a > .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
+}
+
+.list5 > .item > a > .img > .change {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.item:hover a > .img > .change {
+  opacity: 0;
+}
+
+.item > a > .info {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item > a > .info > .price {
+  font-weight: lighter;
+}
+
+/* LIST 6 */
+.listitem > .list6 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.list6 > .item {
+  width: 25%;
+  height: 447.77px;
+  position: relative;
+}
+
+.list6 > .item > a > .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
+}
+
+.list6 > .item > a > .img > .change {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.item:hover a > .img > .change {
+  opacity: 0;
+}
+
+.item > a > .info {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item > a > .info > .price {
+  font-weight: lighter;
+}
+
+/* LIST 7 */
+.listitem > .list7 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.list7 > .item {
+  width: 25%;
+  height: 447.77px;
+  position: relative;
+}
+
+.list7 > .item > a > .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
+}
+
+.list7 > .item > a > .img > .change {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.item:hover a > .img > .change {
+  opacity: 0;
+}
+
+.item > a > .info {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item > a > .info > .price {
+  font-weight: lighter;
+}
+
+.main > article > .box {
+  width: 98%;
+  height: auto;
+  margin: auto;
+}
+
+.box > .title {
+  padding-top: 50px;
+}
+
+.box > .title > span {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  padding-left: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-shadow: 2px 0px 5px #000000;
+}
+
+.flex1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.box8 > .flex1 > .con {
+  width: 24%;
+  height: 400px;
+}
+
+.box8 > .flex1 > .con > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box8 > .flex1 > .con > a > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.flex2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box8 > .flex2 > .con {
+  width: 24%;
+  height: 400px;
+}
+
+.box8 > .flex2 > .con > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box8 > .flex2 > .con > a > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.con > a > span {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 10px;
+}
+
+.fun {
+  width: 98%;
+  height: 2710px;
+  margin: auto;
+  padding-top: 30px;
+}
+.step1 {
+  display: flex;
+  flex-direction: column;
+}
+.step1 > span {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  padding-left: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-shadow: 2px 0px 5px #000000;
+}
+
+.down {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.down > .img {
+  width: 70%;
+  height: 752px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.down > .img > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.icon1 > a > i {
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  font-size: 30px;
+}
+
+.icon1 > a > i:hover {
+  color: rgb(243, 10, 243);
+}
+
+.icon2 > a > i {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-size: 30px;
+}
+
+.icon2 > a > i:hover {
+  color: rgb(243, 10, 243);
+}
+
+.icon3 > a > i {
+  position: absolute;
+  top: 90%;
+  left: 75%;
+  font-size: 30px;
+}
+
+.icon3 > a > i:hover {
+  color: rgb(243, 10, 243);
+}
+
+.icon4 > a > i {
+  position: absolute;
+  top: 130%;
+  left: 70%;
+  font-size: 30px;
+  color: blue;
+}
+
+.icon4 > a > i:hover {
+  color: rgb(243, 10, 243);
+}
+
+.right > iframe {
+  width: 430.9px;
+  height: 650.2px;
+  margin-top: 400px;
+}
+
+/* item2 */
+.right > .item2 {
+  width: 90%;
+  height: 420px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.right > .item2 > a > .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
+}
+
+.right > .item2 > a > .img > .change {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.right > .item2:hover .img > .change {
+  opacity: 0;
+}
+
+.right > .item2 > a > .in4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right > .item2 > a > .in4 > span {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 3px;
+  color: black;
+}
+
+.right > .item2 > a > .in4 > .price {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 3px;
+  color: black;
+}
+
+/* item3 */
+.right > .item3 {
+  width: 90%;
+  height: 420px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.right > .item3 > a > .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
+}
+
+.right > .item3 > a > .img > .change {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.right > .item3:hover .img > .change {
+  opacity: 0;
+}
+
+.right > .item3 > a > .in4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right > .item3 > a > .in4 > span {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 3px;
+  color: black;
+}
+
+.right > .item3 > a > .in4 > .price {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 3px;
+  color: black;
+}
+
+/* item4 */
+.right > .item4 {
+  width: 90%;
+  height: 420px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.right > .item4 > a > .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.2s;
+}
+
+.right > .item4 > a > .img > .change {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.right > .item4:hover .img > .change {
+  opacity: 0;
+}
+
+.right > .item4 > a > .in4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right > .item4 > a > .in4 > span {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 3px;
+  color: black;
+}
+
+.right > .item4 > a > .in4 > .price {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 3px;
+  color: black;
+}
+
+.step2 {
+  width: 100%;
+  height: auto;
+}
+
+/* down2 */
+.down2 {
+  margin-top: 260px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.down2 > .right > iframe {
+  width: 430.9px;
+  height: 650.2px;
+  margin-top: 400px;
+}
+
+.down2 > .img {
+  width: 70%;
+  height: 752px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.down2 > .img > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* item1 down2 */
+.down2 > .right {
+  width: 25%;
+  height: auto;
+  margin-top: 8px;
+}
+.down2 > .right > .item1 {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 120px;
+}
+
+.down2 > .right > .item2 {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 120px;
+}
+
+.down2 > .right > .item3 {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 120px;
+}
+.down2 > .img > .icon1 {
+  position: absolute;
+  top: 50%;
+  left: 380px;
+}
+.down2 > .img > .icon2 {
+  position: absolute;
+  top: 30%;
+  left: 490px;
+}
+
+.down2 > .img > .icon3 {
+  position: absolute;
+  top: 150%;
+  left: 150px;
+}
+.alien {
+  width: 98%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.img1 {
+  width: 49.5%;
+  height: auto;
+}
+.img1 > a > img {
+  width: 100%;
+
+  object-fit: cover;
+}
+.infocona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.textcona {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 3px;
+  color: black;
+  font-size: 25px;
+}
+.infocona > span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  font-size: 15px;
+  color: black;
+}
+.infocona > .btn {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 3px;
+  color: white;
+  background-color: black;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+.infocona > .btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.img2 {
+  width: 49.5%;
+  height: auto;
+}
+.img2 > a > img {
+  width: 100%;
+  height: 100%px;
+  object-fit: cover;
+}
+footer {
+  width: 100%;
+  background-color: #0082cd;
+  height: 800px;
+  margin-top: 20px;
+  position: relative;
+}
+.last > img {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+.form {
+  position: absolute;
+  top: 30%;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.form > .big {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 7px;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.form > span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  word-spacing: 1px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.boxform {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.boxform > input {
+  padding-right: 300px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  outline: none;
+}
+.boxform > input::placeholder {
+  opacity: 0.5;
+  font-size: 17px;
+}
+.btnli > a {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 7px;
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  padding-right: 230px;
+  padding-left: 230px;
+  padding-top: 8.5px;
+  padding-bottom: 8.5px;
+  margin-left: 10px;
+}
+.btnli > a:hover {
+  background-color: #fbacf4;
+}
+.name {
+  position: absolute;
+  left: 35%;
+  top: 600px;
+  align-items: center;
+}
+.name > a > i {
+  font-size: 50px;
+}
+.name > a {
+  font-family: "Alfa Slab One", cursive;
+  font-family: "Cardo", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Titillium Web", sans-serif;
+  word-spacing: 7px;
+  color: white;
+  font-size: 30px;
+  line-height: -10px;
+  text-transform: uppercase;
+}

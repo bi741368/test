@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.main{
+    width: 100%;
+    
+}
+body{
+    padding: 20px;
+}
+table{
+    margin: auto;
+    padding: 20px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: white;
+}
+h3{
+    font-family: sans-serif;
+    font-weight: bold;
+}

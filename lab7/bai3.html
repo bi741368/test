@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form Submission Example</title>
+</head>
+<link rel="stylesheet" href="bai3.css">
+<body>
+ <div class="main">
+  <h2>Submit Form</h2>
+  <form id="myForm" onsubmit="return validateForm()">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" required onblur="if (this.value === '') ">
+    <br>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" required onblur="if (this.value === '') ">
+    <br>
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" required onblur="Nhập">
+    <br>
+  <button>submit</button>
+  </form>
+ </div>
+  <script>
+    function validateForm() {
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var age = document.getElementById("age").value;
+
+      var missingInfo = "";
+
+      if (firstName === "") {
+        missingInfo += 'Please enter your first name.';
+      }
+
+      if (lastName === "") {
+        missingInfo += "Please enter your last name.\n";
+      }
+
+      if (age === "") {
+        missingInfo += "Please enter your age.\n";
+      }
+
+      if (missingInfo !== "") {
+        alert(missingInfo);
+        return false; // Prevent form submission
+      }
+
+      // If all information is filled, the form will be submitted to the server
+      alert("pass");
+    }
+  </script>
+</body>
+
+</html>

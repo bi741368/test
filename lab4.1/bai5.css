@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background-color: pink;
+}
+button{
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    background-color: blueviolet;
+    padding: 20px;
+    font-family: sans-serif;
+    color: white;
+    width: 200px;
+   height: 100px;
+   font-weight: bold;
+   font-size: 20px;
+   border: 1px solid white; 
+   border-radius: 10px;
+   cursor: pointer;
+}
+button:active{
+    background-color: blue;
+}

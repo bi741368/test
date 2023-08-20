@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai1.css">
+</head>
+<body>
+    <div class="container">
+       <div class="left">
+        <div class="box">
+            <div class="img"></div>
+        </div>
+       </div>
+        <div class="tee">
+            <div class="box"></div>
+            <div class="img1">
+                <img src="tee.png" alt="">
+            </div>
+        </div>
+    </div>
+   
+</body>
+<!-- <script src="bai1.js"></script> -->
+<script>
+const boxes = document.querySelectorAll(".box"),
+    img = document.querySelectorAll(".img");
+    
+   boxes.forEach(box => {
+       box.addEventListener("dragover", e=> {
+           e.preventDefault();
+           box.classList.add("hovered");
+       });
+       box.addEventListener("dragleave", ()=>{
+           box.classList.remove("hovered");
+       });
+       box.addEventListener("drop", () =>{
+           // console.log.apply("dragging")
+           if (img.length) {
+               const imgIndex = Math.floor(Math.random() * img.length);
+               box.appendChild(img[imgIndex]);
+           }
+       })
+   });
+</script>
+</html>

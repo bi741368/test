@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiểm tra ngày</title>
+    <link rel="stylesheet" href="bai5.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="content">
+        <h1>Kiểm tra ngày trong tháng</h1>
+        <span>Năm:</span>
+        <input type="number" id="nam" />
+        <span>Tháng:</span>
+        <input type="number" id="thang" />
+        <span>Số ngày</span>
+        <input type="text" id="ngay" />
+        <button onclick="kiemtrangay()">Kiểm tra</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    function kiemtrangay() {
+      var nam = document.getElementById("nam").value;
+      var thang = document.getElementById("thang").value;
+      var ngay = document.getElementById("ngay");
+      switch (thang) {
+        case "1":
+        case "3":
+        case "5":
+        case "7":
+        case "8":
+        case "10":
+        case "12":
+          ngay.value = "31 ngày";
+          break;
+        case "2":
+          if ((nam % 4 == 0 && nam % 100 != 0) || nam % 400 == 0) {
+            ngay.value = "29 ngày";
+          } else {
+            ngay.value = "28 ngày";
+          }
+          break;
+        case "4":
+        case "6":
+        case "9":
+        case "11":
+          ngay.value = "30 ngày";
+          break;
+        default:
+          ngay.value = "Vui lòng nhập lại tháng";
+          break;
+      }
+    }
+  </script>
+</html>

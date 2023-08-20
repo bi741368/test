@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab3</title>
+    <link rel="stylesheet" href="bai1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <article>
+        <div class="content">
+          <input type="text" id="operand1" placeholder="Nhập số thứ 1" />
+          <input type="text" id="operand2" placeholder="Nhập số thứ 2" />
+          <input type="text" id="operator" placeholder="Toán tử" />
+          <button onclick="calculate()">Calculate</button>
+        </div>
+        <div class="out">
+          <div class="final" id="final"></div>
+        </div>
+      </article>
+    </div>
+    <script>
+      function calculate() {
+        var operand1 = parseFloat(document.getElementById("operand1").value);
+        var operand2 = parseFloat(document.getElementById("operand2").value);
+        var operator = document.getElementById("operator").value;
+        var final = document.getElementById("final");
+        switch (operator) {
+          case "+":
+            var result = operand1 + operand2;
+            final.innerHTML = result.toFixed(0);
+            break;
+          case "-":
+            var result = operand1 - operand2;
+            final.innerHTML = result.toFixed(0);
+            break;
+          case "x":
+            var result = operand1 * operand2;
+            final.innerHTML = result.toFixed(0);
+            break;
+          case ":":
+            var result = operand1 / operand2;
+            final.innerHTML = result.toFixed(0);
+            break;
+          default:
+            alert(operator + " Vui lòng nhập lại phép toán");
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

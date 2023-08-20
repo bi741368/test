@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #ebc76c;
+}
+.main {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+}
+aside{
+  width: 20%;
+  height: auto;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.content {
+  width: 70%;
+  height: auto;
+  background-color: rgba(231, 171, 19, 0.856);
+  margin: auto;
+  border-radius: 7px;
+  padding: 20px;
+  line-height: 50px;
+}
+.content .block1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.content .output {
+  text-align: center;
+}
+.content .block1 span {
+  color: rgb(43, 42, 42);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+input {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 7px;
+}
+.content .btn {
+  text-align: center;
+}
+.content button:hover {
+  background-color: rgb(26, 207, 26);
+}
+.btn button {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(29, 213, 29);
+  cursor: pointer;
+}
+.output{
+    margin-top: 20px;
+}
+.output span{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* btn */
+.btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+ }
+ 
+ .btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #ff6700;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+ }
+ 
+ .btn:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+ }
+ 
+ .btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+ }
+ 
+ .btn:active {
+  transform: scale(0.9);
+ }

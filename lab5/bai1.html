@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB5</title>
+<link rel="stylesheet" href="bai1.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <img src="img1-removebg-preview.png" alt="" />
+        <div id="title">IP5</div>
+      <span>price: 12000</span>
+        <div class="option">
+          <button class="leftbtn">-</button>
+          <input type="number" value="1" name="" id="myInput" />
+          <button class="rightbtn">+</button>
+        </div>
+        <button id="button">ADD</button>
+      </div>
+      <div class="last">
+        <span>CART</span>
+        <div class="con">
+          <div id="name"></div>
+        <div class="output" ></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var title = document.getElementById("title");
+      var output = document.querySelector(".output");
+      var button = document.getElementById("button");
+      var left = document.querySelector(".leftbtn");
+      var right = document.querySelector(".rightbtn");
+      var input = document.getElementById("myInput");
+      
+     button.addEventListener("click", function(){
+      document.getElementById("name").innerHTML = title.innerText;
+      var inputValue = parseInt(input.value);
+      var kq = (inputValue ) * 12000;
+          output.innerText = kq;
+          left();
+          right();
+     })
+
+      left.addEventListener("click", function () {
+        var inputValue = parseInt(input.value);
+        if (!isNaN(inputValue)) {
+          if (inputValue > 1) {
+            input.value = inputValue - 1;
+          }
+          var kq = (inputValue ) * 12000;
+          // output.innerText = kq;
+        }
+      });
+
+      right.addEventListener("click", function () {
+        var inputValue = parseInt(input.value);
+        if (!isNaN(inputValue)) {
+          input.value = inputValue + 1;
+          var kq = (inputValue + 1) * 12000;
+          // output.innerText = kq;
+        }
+      });
+
+      // Trigger calculation on "Enter" key press
+      input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          var inputValue = parseFloat(input.value);
+          if (!isNaN(inputValue)) {
+            var kq = inputValue * 12000;
+            // output.innerText = kq;
+          }
+        }
+      });
+
+      // Call leftbtn and rightbtn functions
+    </script>
+  </body>
+</html>

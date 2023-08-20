@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Đặt mua sản phẩm</title>
+  <!-- <script type="text/javascript" src="lab75.js"></script> -->
+</head>
+<link rel="stylesheet" href="bai5.css">
+
+<body>
+  <div class="main">
+    <h1>Đặt mua sản phẩm</h1>
+    <form onsubmit="return kiem_tra()">
+      <label for="san_pham">Sản phẩm:</label>
+      <input type="text" name="san_pham" id="san_pham" required>
+      <br>
+
+      <label for="don_gia">Đơn giá:</label>
+      <input type="number" name="don_gia" id="don_gia" required>
+      <br>
+
+      <label for="loai">Loại sản phẩm:</label>
+      <select name="loai" id="loai" required>
+        <option value="">Chọn loại</option>
+        <option value="1">Loại 1</option>
+        <option value="2">Loại 2</option>
+      </select>
+      <br>
+
+      <label>Nơi nhận hàng:</label>
+      <div class="text">
+        <div class="info1">
+          <input type="radio" name="dia_chi" onclick="hien_thi(false)"><span>Nội Thành</span>
+        </div>
+       <div class="info2">
+        <input type="radio" name="dia_chi" onclick="hien_thi(true)"><span>Ngoại Thành</span>
+       </div>
+      </div>
+      <br>
+
+     <div class="output">
+      <div id="phi_vc" style="display: none;">
+        <label class="you">Phí vận chuyển:</label>
+        <input type="text" name="phi_vc" readonly value="100000" class="me">
+        <br>
+      </div>
+     </div>
+
+      <button>Đặt Mua</button>
+    </form>
+  </div>
+</body>
+<script>
+  function validateForm() {
+    var san_pham = document.getElementById("san_pham").value;
+    var don_gia = document.getElementById("don_gia").value;
+    var loai = document.getElementById("loai").value;
+
+    var missing = "";
+    if (san_pham == "") {
+      missing += "Sản phẩm\n";
+    }
+    if (don_gia == "") {
+      missing += "Đơn giá\n";
+    }
+    if (loai == "") {
+      missing += "Loại sản phẩm\n";
+    }
+
+    if (missing != "") {
+      alert("Vui lòng nhập " + missing);
+      return false;
+    }
+
+    // return true;
+  }
+
+  function hien_thi(visible) {
+    var phi_vc = document.getElementById("phi_vc");
+    phi_vc.style.display = visible ? "" : "none";
+  }
+  function kiem_tra() {
+    var radios = document.getElementsByName("dia_chi");
+    if (!radios[0].checked && !radios[1].checked) {
+      alert("Vui lòng chọn nơi nhận hàng!");
+      return false;
+    }
+  }
+</script>
+
+</html>

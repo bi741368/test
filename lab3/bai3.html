@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAB3</title>
+  <link rel="stylesheet" href="bai3.css" />
+</head>
+<body>
+  <div class="main">
+    <div class="output">
+      <div class="in" id="in"></div>
+      <div class="out" id="out"></div>
+    </div>
+    
+    <!-- <input type="text" id="result" disabled> -->
+    <div class="content">
+      <div class="lock">
+        <span onclick="appendToResult('7')">7</span>
+        <span onclick="appendToResult('8')">8</span>
+        <span onclick="appendToResult('9')">9</span>
+        <span onclick="appendToResult('+')">+</span>
+      </div>
+      <div class="lock">
+        <span onclick="appendToResult('4')">4</span>
+        <span onclick="appendToResult('5')">5</span>
+        <span onclick="appendToResult('6')">6</span>
+        <span onclick="appendToResult('-')">-</span>
+      </div>
+      <div class="lock">
+        <span onclick="appendToResult('1')">1</span>
+        <span onclick="appendToResult('2')">2</span>
+        <span onclick="appendToResult('3')">3</span>
+        <span onclick="appendToResult('*')">x</span>
+      </div>
+      <div class="lock">
+        <span onclick="appendToResult('0')">0</span>
+        <span onclick="clearResult()">C</span>
+        <span onclick="calculate()">=</span>
+        <span onclick="appendToResult('/')">:</span>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="bai3.js"></script>
+</html>

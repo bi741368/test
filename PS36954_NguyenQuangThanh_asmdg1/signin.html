@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="bai1.css">
+  </head>
+  <body>
+    <header>
+      <span>
+          <a href="">FIND A STORE</a>
+      </span>
+      <span>
+          <a href="form.html">Sign in</a>
+      </span>
+
+  </header>
+    <nav>
+      <div class="mainnav">
+          <div class="nav1">
+              <a href="bai.html">
+                  <img src="img/basic-removebg-preview.png" alt="">
+              </a>
+          </div>
+          <div class="menu">
+              <div class="box1">
+                  <span>
+                      <a href="">APPEREL</a>
+                  </span>
+              </div>
+              <div class="box2">
+                  <span>
+                      <a href="">ACCESSORIES</a>
+                  </span>
+                  <div class="content">
+
+                  </div>
+              </div>
+              <div class="box3">
+                  <span>
+                      <a href="">COLLECTIONS</a>
+                  </span>
+              </div>
+              <div class="box4">
+                  <span>
+                      <a href="">SALE</a>
+                  </span>
+              </div>
+          </div>
+          <div class="icon">
+              <span><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></span>
+              <a href="cart.html">
+                  <span><i class="fa-solid fa-box-archive" style="color: #000000; font-size: 23px;"></i></span>
+              </a>
+          </div>
+      </div>
+  </nav>
+  <div class="mainform">
+    <h1>CREATE ACCOUNT</h1>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="firstName">EMAIL</label>
+        <input type="text" id="email" name="email" required onblur="if (this.value === '') ">
+      <label for="firstName">USERNAME</label>
+      <input type="text" id="username" name="username" required onblur="if (this.value === '') ">
+      <br>
+      <label for="lastName">PASSWORD</label>
+      <input type="password" id="password" name="password" required onblur="if (this.value === '') ">
+      <br>
+      <!-- <label for="age">Age</label>
+      <input type="number" id="age" name="age" required onblur="Nhập">
+      <br> -->
+      <button>CREATE</button>
+  </div>
+  </body>
+  <footer>
+    <div class="last">
+   
+    <div class="form">
+        <div class="big">SIGN UP FOR OUR NEWSLETTER</div>
+        <span>Stay up to date with the latest RIPNDIP news, releases, events and special offers. </span>
+        <span>Subscribe to our newsletter and receive a personal discount code.</span>
+        <div class="boxform">
+            <input type="text" placeholder="Enter your email">
+            <div class="btnli">
+                <a href="">
+                    SUBCRIBE
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+const button = document.querySelector("button");
+button.addEventListener("click", () => {
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  const missingInfo = "Vui lòng nhập thông tin";
+
+  if (username === "" || email === "" || password === "") {
+    // missingInfo = "Vui lòng điền đầy đủ thông tin.";
+    console.log(missingInfo);
+  } else {
+    window.location.href = "form.html";
+    alert("pass");
+  }
+
+//   alert("Bạn đã tạo tài khoản thành công");
+});
+
+//   window.location = "bai.html";
+</script>
+
+
+</html>

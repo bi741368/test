@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+body{
+    background-color: black;
+}
+.content{
+    width: 50%;
+    height: 500px;
+    background-color: #FF5798;
+    margin: auto;
+    border: 2px solid black;
+    box-shadow: 3px 3px  10px rgb(141, 138, 138);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: -400px;
+}
+h4{
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
+    display: inline-block; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #6C77FF;
+}
+.box{
+    text-align: center;
+    position: relative;
+    width: 400px;
+    height: auto;
+}
+.box .ice{
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+.text{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    line-height: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: none;
+    transition: ease-in-out 5s;
+    top: 32px;
+    
+}
+.box:hover .text{
+    transition: ease-in-out 3s;
+   display: block;
+}
+.text span{
+    display: block;
+    color:palevioletred;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.text span:hover{
+   color:rgb(219, 13, 48)
+}
+.content .title{
+    font-weight: bold;
+    font-size: 20px;
+    color: #6C77FF;
+    font-size: 50px;
+    text-shadow: 2px 3px #FFD100;
+}
+.left{
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn {
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+   }
+   
+   .btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ff6700;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+   }
+   
+   .btn:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+   }
+   
+   .btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+   }
+   
+   .btn:active {
+    transform: scale(0.9);
+   }

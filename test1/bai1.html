@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/img3.webp" id="img" alt="">
+    <button id="btn">Click me</button>
+</body>
+<script>
+   const img = document.getElementById("img");
+   const btn = document.getElementById("btn");
+   
+   btn.addEventListener("click", () => {
+    if (img.src.endsWith("img3.webp")) {
+        img.src = "img/img4.webp";
+        btn.innerText = "tắt";
+    } else {
+        img.src = "img/img3.webp";
+        btn.innerText = "mở";
+    }
+   });
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB4</title>
+    <link rel="stylesheet" href="bai5.css">
+</head>
+<body>
+    <button onclick="openWindow()">Mở cửa sổ</button>
+    <button onclick="closeWindow()">Đóng cửa sổ</button>
+    <button onclick="checkWindow()">Kiểm tra</button>
+</body>
+<script>
+    var newWindow;
+    function openWindow() {
+        newWindow = window.open("https://www.google.com/", "Google", "toolbar=YES,menubar=YES,width=100");
+    }
+
+    function closeWindow() {
+        if (newWindow && !newWindow.closed) {
+            newWindow.close();
+        }
+    }
+
+    function checkWindow() {
+        if (newWindow && newWindow.closed) {
+            alert("Cửa sổ đã được đóng");
+        } else if (newWindow && !newWindow.closed) {
+            alert("Cửa sổ mới đang mở");
+        } else {
+            alert("Cửa sổ chưa được mở");
+        }
+    }
+</script>
+</html>

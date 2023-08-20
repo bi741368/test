@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Um HTML5 video player</h1>
+    <link rel="stylesheet" href="Lab8_3.css">
+        <div id="player-container">
+            <video id="myplayer" src="Phong cảnh Đà Lạt_ Timelapse __ Hachi8Media.mp4" type="video/mp4">
+                Your browser does not supported HTML5 video.
+            </video>
+            <div class="control">
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="stopVideo()">Stop</button>
+                <button onclick="replayVideo()">Replay</button>
+                <button onclick="tangVolume()">Volume (+)</button>
+                <button onclick="giamVolume()">Volume (-)</button>
+                <button onclick="muteVolume()">Mute/Unmute</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var player = document.getElementById("myplayer");
+    function playPause(){
+        if(player.paused) {player.play();}
+        else {play.pause();}
+    }
+    function stopVideo(){
+        player.pause();
+        if(player.currentTime){ player.currentTime = 0;}
+    }
+    function replayVideo(){
+        player.currentTime = 0;
+        player.replay();
+    }
+    function tangVolume(){
+        if(player.volume < 1)
+        player.volume = parseFloat(player.volume + 0.1).toFixed(1);
+    }
+    function giamVolume(){
+        if(player.volume > 0)
+        player.volume = parseFloat(player.volume - 0.1).toFixed(1);
+    }
+    function muteVolume(){
+        if(player.muted){player.muted=false;}
+        else {player.muted= true;}
+    }
+</script>

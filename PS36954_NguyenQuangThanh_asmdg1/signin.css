@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color:cornflowerblue;
+}
+form{
+    background-color: pink;
+    width: 500px;
+    height: 690px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(139, 32, 32);
+    border: x solid black;
+    padding: 20px;
+}
+span{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(34, 6, 60);
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.name input{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+.gender{
+    margin-top: 20px;
+}
+.select{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.select input{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.file{
+    margin-top: 20px;
+}
+.country{
+    margin-top: 20px;
+}
+.country select{
+    padding: 10px;
+}
+.hobby{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.note{
+    display: flex;
+   margin-top: 20px; 
+}
+.note textarea{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.note span{
+    margin-right: 50px;
+}
+.btn{
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.btn .signin a{
+    background-color: rgb(36, 144, 222);
+    padding:20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.btn .signin a:hover{
+    background-color: white;
+    color: rgb(0, 128, 255);
+}
+.btn .again a{
+    background-color: rgb(36, 144, 222);
+    padding:20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+}
+.btn .again a:hover{
+    background-color: white;
+    color: rgb(0, 128, 255);
+}

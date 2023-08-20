@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiệu ứng Album Trang Chi Tiết Sản Phẩm</title>
+  <style>
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product-gallery img {
+      max-width: 200px;
+      margin: 5px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .product-gallery img:hover {
+      opacity: 0.7;
+    }
+
+    .main-image {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-gallery">
+    <img src="path_to_main_image.jpg" alt="Main Image" class="main-image" id="mainImage">
+
+    <div>
+      <img src="/PS36954_NguyenQuangThanh_asmdg1/img/img1.webp" alt="Mini Image 1" onclick="changeImage('path_to_main_image_1.jpg')">
+      <img src="path_to_mini_image_2.jpg" alt="Mini Image 2" onclick="changeImage('path_to_main_image_2.jpg')">
+      <!-- Thêm các mini hình ảnh khác tại đây -->
+    </div>
+  </div>
+
+  <script>
+    function changeImage(imagePath) {
+      const mainImage = document.getElementById('mainImage');
+      mainImage.src = imagePath;
+    }
+  </script>
+</body>
+</html>
